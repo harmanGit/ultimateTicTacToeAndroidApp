@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#cf5b83</color>
+    <color name="colorBackDrop">#f7dae4</color>
+    <color name="selectedBoard">#f4afc7</color>
+    <color name="deselectBoard">#f7cfdd</color>
+    <color name="game_button_color">#f5f5f5</color>
+    <color name="xBoardWin">#79cee1</color>
+    <color name="oBoardWin">#9eedc0</color>
+</resources>

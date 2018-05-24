@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackDrop"
+    tools:context="com.cs345.harmanjeetdhillon.ultimatetictactoe.PlayGame">
+
+
+    <LinearLayout
+        android:id="@+id/ticTacToeBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/topRow"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp">
+
+            <LinearLayout
+                android:id="@+id/topLeft"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerTopLeftRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/topLeft1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topLeft2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topLeft3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerTopLeftRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/topLeft4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topLeft5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topLeft6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerTopLeftRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/topLeft7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topLeft8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topLeft9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/topMed"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerTopMedRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/topMed1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topMed2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topMed3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerTopMedRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/topMed4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topMed5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topMed6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerTopMedRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/topMed7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topMed8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topMed9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/topRight"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerTopRightRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/topRight1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topRight2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topRight3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerTopRightRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/topRight4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topRight5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topRight6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerTopRightRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/topRight7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topRight8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/topRight9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/medRow"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/medLeft"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerMedLeftRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/medLeft1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medLeft2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medLeft3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerMedLeftRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/medLeft4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medLeft5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medLeft6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerMedLeftRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/medLeft7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medLeft8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medLeft9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/medMed"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerMedMedRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/medMed1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medMed2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medMed3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerMedMedRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/medMed4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medMed5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medMed6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerMedMedRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/medMed7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medMed8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medMed9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/medRight"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerMedRightRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/medRight1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medRight2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medRight3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerMedRightRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/medRight4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medRight5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medRight6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerMedRightRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/medRight7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medRight8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/medRight9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomRow"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="top|center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/bottomLeft"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerBottomLeftRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bottomLeft1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomLeft2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomLeft3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerBottomLeftRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bottomLeft4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomLeft5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomLeft6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerBottomLeftRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/bottomLeft7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomLeft8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomLeft9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomMed"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerBottomMedRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bottomMed1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomMed2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomMed3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerBottomMedRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bottomMed4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomMed5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomMed6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerBottomMedRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/bottomMed7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomMed8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomMed9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomRight"
+                android:layout_width="@dimen/main_row_width"
+                android:layout_height="@dimen/main_row_height"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/innerBottomRightRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bottomRight1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomRight2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomRight3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerBottomRightRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bottomRight4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomRight5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomRight6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerBottomRightRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/secondary_row_height">
+
+                    <Button
+                        android:id="@+id/bottomRight7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomRight8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+
+                    <Button
+                        android:id="@+id/bottomRight9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:onClick="setButtonPressed"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countDownLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacToeBoard">
+
+        <LinearLayout
+            android:id="@+id/labelsClicksLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/clicksX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clicks 'X'"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/clicksO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clicks 'O'"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/countClicksLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/countingClicksX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="000"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/countingClicksO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="000"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
